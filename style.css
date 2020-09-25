@@ -1,0 +1,140 @@
+/* CONTAINER */
+#cont{
+    margin: auto;
+    width: 80%;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+/* GAME BOX */
+#gbox{
+    height: fit-content;
+    margin: 5px auto;
+    background-color: wheat;
+    text-align: center;
+}
+
+/* HEADING */
+#head, h2{
+    text-align: center;
+}
+
+/* CHANCES */
+#life_box{
+    font-size: 100px;
+    color:red;
+    font-size: 20px;
+    position: relative;
+    float: right;
+    top: -45px;
+    right: 5px;
+}
+/* START */
+#start_box{
+    /* font-size: 100px;
+    color:red;
+    font-size: 20px; */
+    position: relative;
+    float: left;
+    top: -45px;
+    left: 5px;
+}
+#start{
+    border: none;
+    border-radius: 30px 10px 30px;
+    text-align: center;
+    font-size: 15px;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 5px;
+    background-color: blue;
+    margin: 0px auto;  
+}
+#start:hover{
+    background-color: seashell;
+    color: black;
+}
+/* SCORE Pts*/
+#score_box{
+    position: relative;
+    float: right;
+    background-color: whitesmoke;
+    font-size: 20px;
+    top: -40px;
+    right: 20px;
+    color: rgb(4, 87, 4);
+    border: 2px solid blueviolet;
+    width: fit-content;
+}
+/* GAME ELEMENTS */
+#elements{
+    margin: 30px auto;
+    text-align: center;
+    padding: 0px 120px;
+}
+.circle{
+    height: 180px;
+    width: 180px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px 3px 10px 3px;
+}
+.circle:hover{
+    background-color: gray;
+}
+.circle:active{
+    border: 5px solid rgb(3, 3, 87);     /*effects are added when clicked by user */
+}
+/* COLOR PALLETE */
+#plt{
+    margin: 0px auto;
+    width: auto;
+    text-align: center;
+}
+.button-group .buttons{
+    background-color: blue; 
+    border: 1px solid black; 
+    display: -ms-inline-flexbox;
+    vertical-align: middle;
+    padding: 20px 24px; 
+    cursor: pointer; 
+    width: 78%;
+}
+.buttons:hover{
+    border: 3px solid blue;
+}
+#btn_1, #btn_2, #btn_3, #btn_4, #btn_5, #btn_6{
+    width: 13%;
+}
+#btn_1{
+    border-radius: 18px 0px 0px 18px;
+}
+#btn_6{
+    border-radius: 0px 18px 18px 0px;
+}
+
+/* VALIDATION BOX */
+#vaildation_box{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+.check_btn{
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: seashell;
+    cursor: pointer;
+    padding: 8px;
+    background-color: rgb(54, 2, 2);
+    margin: 20px auto;   
+}
+.check_btn:hover{
+    background-color: seashell;
+    color: black;
+}

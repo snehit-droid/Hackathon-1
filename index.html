@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Me Right</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <script>
+        var container = document.createElement('div');
+        container.id = 'cont';
+        container.classList.add('container');
+        
+        var gbox = document.createElement('div');  //game Box
+        gbox.id = 'gbox';
+
+        var head = document.createElement('H2');   //changes level after level
+        head.id = 'head';
+        var htext = document.createTextNode('Level 1');
+        head.appendChild(htext);
+
+        var life_box = document.createElement('SPAN'); //displays number of chances remaining.
+        life_box.id = 'life_box';
+        life_box.innerHTML = '&#10084; &#10084; &#10084;';
+
+        var start_box = document.createElement('SPAN'); //displays start button
+        start_box.id = 'start_box';
+        var start_btn = document.createElement("INPUT");
+        start_btn.setAttribute("type", "button");
+        start_btn.classList.add('start_btn');
+        start_btn.setAttribute("value", "START");
+        start_btn.id = 'start';
+        start_box.appendChild(start_btn);
+
+        var score_box = document.createElement('SPAN'); //displays score
+        score_box.id = 'score_box';
+        var score = document.createTextNode('Pts: 0');
+        score_box.append(score);
+
+        var gelement = document.createElement('div');  //game elements (CIRCLES)
+        gelement.id = 'elements';
+        var circ_1 = document.createElement('BUTTON');   
+        circ_1.id = 'circ_1';
+        circ_1.setAttribute('type','button');
+        circ_1.setAttribute("name", "circle_elements");
+        circ_1.setAttribute("value", "circ_1");
+        circ_1.classList.add('circle');
+        var circ_2 = document.createElement('BUTTON');
+        circ_2.id = 'circ_2';
+        circ_2.setAttribute('type','button');
+        circ_2.setAttribute("name", "circle_elements");
+        circ_2.setAttribute("value", "circ_2");
+        circ_2.classList.add('circle');
+        var circ_3 = document.createElement('BUTTON');
+        circ_3.id = 'circ_3';
+        circ_3.setAttribute('type','button');
+        circ_3.setAttribute("name", "circle_elements");
+        circ_3.setAttribute("value", "circ_3");
+        circ_3.classList.add('circle');
+        var circ_4 = document.createElement('BUTTON');
+        circ_4.id = 'circ_4';
+        circ_4.setAttribute('type','button');
+        circ_4.setAttribute("name", "circle_elements");
+        circ_4.setAttribute("value", "circ_4");
+        circ_4.classList.add('circle');
+        gelement.append(circ_1, circ_2, circ_3, circ_4);
+
+        var palette = document.createElement('div');  //color palette
+        palette.id = 'plt';
+        palette.setAttribute("type","group");
+        palette.classList.add('button-group');
+        var btn_1 = document.createElement("BUTTON");  //coloured buttons
+        btn_1.id = 'btn_1';
+        btn_1.setAttribute('type','button');
+        btn_1.setAttribute("class","buttons");
+        btn_1.style.backgroundColor = "rgb(255, 0, 0)";
+        btn_1.setAttribute("value", "rgb(255, 0, 0)");
+        var btn_2 = document.createElement("BUTTON");
+        btn_2.id = 'btn_2';
+        btn_2.setAttribute('type','button');
+        btn_2.setAttribute("class","buttons");
+        btn_2.style.backgroundColor = "rgb(62, 179, 7)";
+        btn_2.setAttribute("value", "rgb(62, 179, 7)");
+        var btn_3 = document.createElement("BUTTON");
+        btn_3.id = 'btn_3';
+        btn_3.setAttribute('type','button');
+        btn_3.setAttribute("class","buttons");
+        btn_3.style.backgroundColor = "rgb(103, 21, 170)";
+        btn_3.setAttribute("value", "rgb(103, 21, 170)");
+        var btn_4 = document.createElement("BUTTON");
+        btn_4.id = 'btn_4';
+        btn_4.setAttribute('type','button');
+        btn_4.setAttribute("class","buttons");
+        btn_4.style.backgroundColor = "rgb(148, 26, 128)";
+        btn_4.setAttribute("value", "rgb(148, 26, 128)");
+        var btn_5 = document.createElement("BUTTON");
+        btn_5.id = 'btn_5';
+        btn_5.setAttribute('type','button');
+        btn_5.setAttribute("class","buttons");
+        btn_5.style.backgroundColor = "rgb(10, 252, 1)";
+        btn_5.setAttribute("value", "rgb(10, 252, 1)");
+        var btn_6 = document.createElement("BUTTON");
+        btn_6.id = 'btn_6';
+        btn_6.setAttribute('type','button');
+        btn_6.setAttribute("class","buttons");
+        btn_6.style.backgroundColor = "rgb(199, 10, 10)";
+        btn_6.setAttribute("value", "rgb(199, 10, 10)");
+        
+        palette.append(btn_1, btn_2, btn_3, btn_4, btn_5, btn_6);
+
+        var valid = document.createElement('div');  //validation box
+        valid.id = 'vaildation_box';
+        var btn = document.createElement("INPUT");  //check button
+        btn.setAttribute("type", "button");
+        btn.classList.add('check_btn');
+        btn.setAttribute("value", "check");
+        btn.id = 'check_ide';
+        valid.appendChild(btn);
+
+        gbox.append(head, life_box, start_box, score_box, gelement, palette, valid);
+        container.appendChild(gbox);
+
+        document.body.append(container);
+
+    </script>
+    
+    <script src="sample_script.js"> </script>
+    
+</body>
+</html>
