@@ -396,16 +396,16 @@ if(level > (res+1)){
 
 
     function pick_1(){
-            c1+=1; 
+            c1=1; 
         }
     function pick_2(){
-            c2+=1; 
+            c2=1; 
         }
     function pick_3(){
-            c3+=1; 
+            c3=1; 
         }
     function pick_4(){
-            c4+=1; 
+            c4=1; 
         }    
 
 
