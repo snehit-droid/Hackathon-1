@@ -138,3 +138,29 @@
     background-color: seashell;
     color: black;
 }
+
+@media only screen and (max-width: 600px) {
+    #elements{
+        padding: 0px 120px;
+    }
+    .circle{
+        height: 50px;
+        width: 50px; 
+    }
+    .button-group .buttons{
+        padding: 10px 14px; 
+    }
+    body {
+      background-color: whitesmoke;
+    }
+    #score_box{
+        top: -15px;
+        right: -50px;
+    }
+  }
+
+  @media only screen and (max-width: 350px){
+    #elements{
+        padding: 0px 90px;
+    }
+  }

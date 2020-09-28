@@ -119,6 +119,9 @@
         btn.setAttribute("value", "check");
         btn.id = 'check_ide';
         valid.appendChild(btn);
+        let note = document.createElement('H2');
+        note.id = 'msg_box';
+        valid.appendChild(note);
 
         gbox.append(head, life_box, start_box, score_box, gelement, palette, valid);
         container.appendChild(gbox);
@@ -127,7 +130,7 @@
 
     </script>
     
-    <script src="sample_script.js"> </script>
+    <script src="script.js"> </script>
     
 </body>
 </html>
