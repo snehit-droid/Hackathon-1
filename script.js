@@ -55,8 +55,9 @@ level+=1;
 let result = document.getElementById('msg_box');
 result.innerHTML = "";
  if(level>9) {
-    alert("GAME COMPLETED YOU CAN RESTART BY REFRESHING THE PAGE"); 
+    // alert("GAME COMPLETED YOU CAN RESTART BY REFRESHING THE PAGE"); 
     level = 0; 
+    setTimeout(function() { alert("GAME COMPLETED YOU CAN RESTART BY REFRESHING THE PAGE")},1000);
     return false; 
     }
 
@@ -64,9 +65,10 @@ result.innerHTML = "";
     l_change.innerHTML = "Level " + level;  
 
 if(level > (res+1)){ 
-    alert("You can't skip the level, To 'Restart' the game REFRESH the page"); 
+    // alert("You can't skip the level, To 'Restart' the game REFRESH the page"); 
     l_change.innerHTML = "Level " + ((level)-1);
     level = level-2; 
+    setTimeout(function() { alert("You can't skip the level, To 'Restart' the game REFRESH the page")},1000);
     return false;
 }
 
@@ -525,10 +527,10 @@ if(level > (res+1)){
             if(level == 9){
                 result.innerHTML = "BRAVO!! You Won The Game.";
                 level = 0;
-                alert(" 'REFRESH' The page to restart the game.");
+                setTimeout(function() { alert(" 'REFRESH' The page to restart the game.")},1000);
             }
-    
-            alert("Click 'START' to proceed to next level");            
+            setTimeout(function() { alert("Click 'START' to proceed to next level")},1000);
+            // alert("Click 'START' to proceed to next level");            
         }
         
         else{
@@ -547,10 +549,11 @@ if(level > (res+1)){
                 if(live == 0){
                     result.innerHTML = "You Lost, Better Luck Next Time";
                     level = 0;
-                    alert(" 'REFRESH' The page to restart the game.");
+                    setTimeout(function() { alert(" 'REFRESH' The page to restart the game.")},1000);
+                    // alert(" 'REFRESH' The page to restart the game.");
                 }
             }
-
-            alert("Click 'START' to 'Restart' this level");
+            setTimeout(function() { alert("Click 'START' to 'Restart' this level")},1000);
+            // alert("Click 'START' to 'Restart' this level");
         }
     }
