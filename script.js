@@ -50,7 +50,12 @@ btn_6.addEventListener("click", cpick_6);
 var btn = document.getElementById('check_ide');
 btn.addEventListener("click", evaluate);
 
-function game_start() {
+async function game_start() {
+await alert(`RULES:
+1)click on start to start the game.
+2)observe the color pattern of the bubbles and fill the bubbles with right colors.
+3)The game has 10 levels and you have 3 lives.
+ENJOY THE GAME!!!`);    
 level+=1;
 let result = document.getElementById('msg_box');
 result.innerHTML = "";
